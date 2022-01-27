@@ -28,17 +28,14 @@ document.addEventListener("DOMContentLoaded", function() {
 /**
    * Array with image source links to be retrieved and inserted into the HTML when cards are created
    */
- const img = document.createElement("img");
- img.src = "assets/images/01_Square.png";
- document.body.appendChild(img);
 
- const cardDeck = [
-    "01_Square.png",
-    "02_Hexagon.png",
-    "03_Circle.png",
-    "04_triangle.png",
-];
+const img = document.querySelectorAll("img"); 
+img[0].src = "assets/images/01_Square.png"; // image 1
+img[1].src = "assets/images/02_Hexagon.png"; // image 2
+img[2].src = "assets/images/03_Circle.png"; // image 3
+img[3].src = "assets/images/04_triangle.png"; // image 4
+document.body.appendChild(img);
 
-
-
-}
+const img = document.createElement("img");
+img.src = "https://picsum.photos/200/301";
+document.body.appendChild(img);
